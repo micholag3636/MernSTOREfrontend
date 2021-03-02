@@ -358,3 +358,38 @@ a{
 
 
 }
+
+
+@media (max-width: 800px){
+    .Nav{
+        width: 800px;
+    }
+
+
+
+
+}
+
+
+
+@media (max-width: 900px){
+    .Nav{
+        width: 900px;
+    }
+
+
+
+
+}
+
+@media (max-width: 600px){
+    .Nav{
+        width: 600px;
+    }
+
+
+
+
+}
+
+
