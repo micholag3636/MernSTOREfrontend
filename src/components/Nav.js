@@ -53,9 +53,9 @@ function Nav() {
 
                 <button className="navbutabout"><h3 className="droph3">About Us</h3></button>
                 <div class="dropdown-about">
-                    <a href="/company"><button className="dropdownb">Company</button></a>
-                    <a href="/team"><button className="dropdownb">Team</button></a>
-                    <a href="/founders"><button className="dropdownb">Founders</button></a>
+                    <Link to="/company" ><button className="dropdownb">Company</button></Link>
+                  <Link to="/team"><button className="dropdownb">Team</button></Link>  
+                   <Link to="/founders"> <button className="dropdownb">Founders</button></Link>
                 </div>
                 </div>
 
@@ -72,9 +72,9 @@ function Nav() {
 
   <button className="navbutabout"><h3 className="droph3">Contact Us</h3></button>
   <div class="dropdown-about">
-      <a href="/offices"><button className="dropdownb">Offices</button></a>
-      <a href="/warehouses"><button className="dropdownb">Warehouses</button></a>
-      <a href="/support"><button className="dropdownb">Support</button></a>
+     <Link to="/offices"> <button className="dropdownb">Offices</button></Link>
+      <Link to="/warehouses"><button className="dropdownb">Warehouses</button></Link>
+    <Link to="/support">  <button className="dropdownb">Support</button></Link>
   </div>
   </div>
               
