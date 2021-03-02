@@ -7,7 +7,8 @@ export const getProducts = () => async (dispatch) => {
 
     try{
         dispatch({type: actionTypes.GET_PRODUCTS_REQUEST})
-        const {data} = await axios.get("/api/products")
+        const {data} = await axios.get("https://thestores.herokuapp.com/api/products")
+     
 
         dispatch({
             type: actionTypes.GET_PRODUCTS_SUCCESS,
