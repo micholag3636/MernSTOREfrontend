@@ -47,7 +47,7 @@ function Main() {
 
         observer = {true}
         observeParents = {true}
-        spaceBetween={20}
+        spaceBetween={10}
         slidesPerView={4}
        navigation
        pagination={{clickable: true}}
