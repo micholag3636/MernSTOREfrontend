@@ -52,7 +52,8 @@ function Main() {
         navigation
 
         
-        autoplay 
+        autoplay={{disableOnInteraction: false }}
+          
       
         
 
@@ -80,6 +81,7 @@ function Main() {
                     price={product.pice}
                     description={product.description}
                     imageUrl={product.imageUrl}
+                    
                     
                     /> 
                     </div>
