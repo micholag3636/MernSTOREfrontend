@@ -10,6 +10,7 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper';
+import {useState} from "react"
 
 
 
@@ -33,6 +34,14 @@ function Main() {
 
     }, [dispatch])
 
+    
+
+    const [start,setStart] = useState(0)
+    const [end,setEnd] = useState(4)
+
+
+   
+
 
     
 
@@ -45,14 +54,30 @@ function Main() {
             </div>
         <Swiper
 
-        observer = {true}
-        observeParents = {true}
+
+observer = {true}
+observeParents = {true}
+
+ 
+       
         spaceBetween={10}
         slidesPerView={1}
-        navigation
+        
 
         
         autoplay={{disableOnInteraction: false }}
+
+
+        navigation = {{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }}
+
+
+
+          pagination={{clickable: true}}
+ 
+        
           
       
         
@@ -60,7 +85,7 @@ function Main() {
 
   
 
-       pagination={{clickable: true}}
+      
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
@@ -70,7 +95,7 @@ function Main() {
                 ): error ? (
                     <h2>{error}</h2>
                 ) : (
-                    products.map((product) => 
+                    products.slice(start,end).map((product) => 
                     <SwiperSlide  key={product._id}  className="swiperc">
                         <div >
                     
@@ -85,6 +110,35 @@ function Main() {
                     
                     /> 
                     </div>
+                    <div onClick={() =>{
+                        setStart(start + 4)
+                        setEnd(end + 4)
+                        
+                        
+                         console.log("done")
+                         
+                         } } className="swiper-button-next"> </div>
+                    <div onClick={() =>{
+
+                        if (start === 0){
+                            console.log("Cant go back")
+
+
+                        } else {
+
+
+                        setStart(start - 4)
+                        setEnd(end - 4)
+
+                        }
+
+
+                    }
+
+
+
+                    } className="swiper-button-prev"> </div>
+                   s
 
                     </SwiperSlide>)
 
@@ -100,7 +154,7 @@ function Main() {
 
 
       
-        ...
+      
       </Swiper>
       </div>
       

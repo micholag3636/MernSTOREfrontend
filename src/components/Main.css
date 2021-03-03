@@ -31,12 +31,14 @@
 
 }
 
+.swiper-button-next{
+    margin-right: 50px;
+  
+}
 
-
-
-
-
-
+.swiper-button-prev{
+    margin-left: 10px;
+}
 
 
 

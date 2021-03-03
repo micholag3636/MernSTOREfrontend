@@ -49,8 +49,8 @@ function Nav({click}) {
          
     
 
-                <button className="navbutabout"><h3 className="droph3">About Us</h3></button>
-                <div class="dropdown-about">
+                <button className="navbutabout" ><h3 className="droph3">About Us</h3></button>
+                <div class="dropdown-about" id="topdrop">
                     <Link to="/company" ><button className="dropdownb">Company</button></Link>
                   <Link to="/team"><button className="dropdownb">Team</button></Link>  
                    <Link to="/founders"> <button className="dropdownb">Founders</button></Link>
@@ -70,7 +70,7 @@ function Nav({click}) {
 <div className="nav_link">
 
   <button className="navbutabout"><h3 className="droph3">Contact Us</h3></button>
-  <div class="dropdown-about">
+  <div class="dropdown-about " id="topdrop">
      <Link to="/offices"> <button className="dropdownb">Offices</button></Link>
       <Link to="/warehouses"><button className="dropdownb">Warehouses</button></Link>
     <Link to="/support">  <button className="dropdownb">Support</button></Link>
@@ -89,7 +89,7 @@ function Nav({click}) {
                     <Link to="/store">
 
             
-               <button className="navbut"><h3 className="droph3" id="droph3s">Store</h3></button>
+               <button className="navbut"  id="droph3s"><h3 >Store</h3></button>
                </Link>
                </div>
                
@@ -104,7 +104,7 @@ function Nav({click}) {
                     <div className="nav_link">
                     <Link to="/cart">
 
-                    <button className="navbutcart"> <ShoppingCartIcon /><h3 className="droph3" id="droph3s">Cart</h3><h2>{getCartCount()}</h2> </button>
+                    <button className="navbutcart"> <ShoppingCartIcon /><h3  id="droph3s">Cart</h3><h2>{getCartCount()}</h2> </button>
                     </Link>
                 
                   

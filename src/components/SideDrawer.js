@@ -64,7 +64,7 @@ function SideDrawer({show, click}) {
 
 
 
-<button className="navbutcart" ><ShoppingCartIcon /><h3 className="droph3" id="droph3s">Cart</h3><h2>{getCartCount()}</h2></button>
+<button className="navbutcart" ><ShoppingCartIcon /><h3  id="droph3s">Cart</h3><h2>{getCartCount()}</h2></button>
 
 
 
