@@ -9,12 +9,12 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper';
 
 
 
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 
 
@@ -49,7 +49,16 @@ function Main() {
         observeParents = {true}
         spaceBetween={10}
         slidesPerView={1}
-       navigation
+        navigation
+
+        
+        autoplay 
+      
+        
+
+
+  
+
        pagination={{clickable: true}}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
