@@ -48,7 +48,7 @@ function Main() {
         observer = {true}
         observeParents = {true}
         spaceBetween={10}
-        slidesPerView={4}
+        slidesPerView={1}
        navigation
        pagination={{clickable: true}}
         onSlideChange={() => console.log('slide change')}
