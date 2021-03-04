@@ -207,6 +207,7 @@ h3{
     height: 120px;
     border-radius: 5px;
     color: white;
+    transition: 0.2s 1s;
   
 }
 
@@ -221,6 +222,7 @@ h3{
     align-items: center;
     justify-content: flex-start;
     text-decoration: none;
+    transition-delay: 1s;
 
   
     

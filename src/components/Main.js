@@ -58,7 +58,7 @@ function Main() {
 observer = {true}
 observeParents = {true}
 
-pagination={{clickable: true}}
+
 
 
 
