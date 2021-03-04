@@ -64,6 +64,10 @@ ationClickable = {true}
 autoplay={{disableOnInteraction: false, delay: 1500 }}
 
 
+pagination
+observer = {true}
+centeredSlides = {true}
+
 
 
 
@@ -80,7 +84,8 @@ autoplay={{disableOnInteraction: false, delay: 1500 }}
        
         spaceBetween={10}
         slidesPerView={1}
-        
+        direction = "horizontal"
+        loop = {true}
         
 
         
@@ -89,11 +94,11 @@ autoplay={{disableOnInteraction: false, delay: 1500 }}
 
       
 
-
         navigation = {{
        nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           }}
+       
   
         
 
@@ -101,8 +106,19 @@ autoplay={{disableOnInteraction: false, delay: 1500 }}
       
           
       
-        
+        /*
+          onClick={() =>{
+            setStart(start + 4)
+            setEnd(end + 4)
 
+
+
+            
+            
+             console.log("done")
+             
+             } }
+             */
 
   
 
@@ -145,17 +161,22 @@ autoplay={{disableOnInteraction: false, delay: 1500 }}
                     
                     /> 
                     </div>
-                    <div id="swiper-button-next" onClick={() =>{
-                        setStart(start + 4)
-                        setEnd(end + 4)
+                    <div
+
+onClick={() =>{
+    setStart(start + 4)
+    setEnd(end + 4)
 
 
 
-                        
-                        
-                         console.log("done")
-                         
-                         } } className="swiper-button-next"> </div>
+    
+    
+     console.log("done")}}
+     
+                    
+                    
+                    
+                    id="swiper-button-next" className="swiper-button-next"> </div>
                     <div onClick={() =>{
                       
                       
