@@ -107,11 +107,11 @@ function Nav({click}) {
 
            
 
-                <div className="sec3">
-                    <div className="nav_link">
+                <div className="sec33">
+                    <div className="nav_linker">
                     <Link to="/cart">
 
-                    <button className="navbutcart"> <ShoppingCartIcon /><h3  id="droph3s">Cart</h3><h2>{getCartCount()}</h2> </button>
+                    <button className="navbutcart"> <ShoppingCartIcon /><h3  id="droph3ss">Cart</h3><h2>{getCartCount()}</h2> </button>
                     </Link>
                 
                   

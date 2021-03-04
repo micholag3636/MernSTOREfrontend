@@ -415,6 +415,8 @@ a{
 
 
 
+
+
 .hamburger_menu{
     width: 30px;
     height: 30px;
@@ -439,10 +441,12 @@ a{
 }
 
 .nav_link{
+    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    transition: 1s;
 
     
 }
@@ -498,10 +502,13 @@ a{
 
 
 
+
 }
 
 .dropdowns_wrapper:hover .dropdown-about{
     display: block;
+    transition: 1s;
+    position: absolute;
 }
 
 

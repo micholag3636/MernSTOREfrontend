@@ -59,6 +59,16 @@ observer = {true}
 observeParents = {true}
 
 
+ationClickable = {true}
+
+autoplay={{disableOnInteraction: false, delay: 1500 }}
+
+
+
+
+
+
+
 
 
 
@@ -74,14 +84,18 @@ observeParents = {true}
         
 
         
-        autoplay={{disableOnInteraction: false }}
+     
+
+
+      
 
 
         navigation = {{
-            nextEl: '.swiper-button-next',
+       nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           }}
-
+  
+        
 
 
       
@@ -93,8 +107,20 @@ observeParents = {true}
   
 
       
-        onSlideChange={() => console.log('slide change')}
+        onSlideChange={() =>{
+        
+            setStart(start + 4)
+            setEnd(end + 4)
+       
+
+
+
+            
+            
+             console.log("done")}}
+
         onSwiper={(swiper) => console.log(swiper)}
+      
       >
 
             {loading ? (
@@ -114,13 +140,16 @@ observeParents = {true}
                     description={product.description}
                     imageUrl={product.imageUrl}
 
+                  
                             
                     
                     /> 
                     </div>
-                    <div onClick={() =>{
+                    <div id="swiper-button-next" onClick={() =>{
                         setStart(start + 4)
                         setEnd(end + 4)
+
+
 
                         
                         
@@ -128,6 +157,7 @@ observeParents = {true}
                          
                          } } className="swiper-button-next"> </div>
                     <div onClick={() =>{
+                      
                       
 
                         if (start === 0){
@@ -148,7 +178,8 @@ observeParents = {true}
 
 
                     } className="swiper-button-prev"> </div>
-                   <div className="swiper-pagination"></div>
+                                       <div className="swiper-pagination"></div>
+
 
                     </SwiperSlide>)
 
