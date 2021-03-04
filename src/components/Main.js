@@ -64,7 +64,6 @@ ationClickable = {true}
 autoplay={{disableOnInteraction: false, delay: 1500 }}
 
 
-pagination
 observer = {true}
 centeredSlides = {true}
 
@@ -85,7 +84,8 @@ centeredSlides = {true}
         spaceBetween={10}
         slidesPerView={1}
         direction = "horizontal"
-        loop = {true}
+           loop = {true}
+     
         
 
         
@@ -124,12 +124,7 @@ centeredSlides = {true}
 
       
         onSlideChange={() =>{
-        
-            setStart(start + 4)
-            setEnd(end + 4)
-       
-
-
+     
 
             
             
@@ -166,6 +161,7 @@ centeredSlides = {true}
 onClick={() =>{
     setStart(start + 4)
     setEnd(end + 4)
+
 
 
 
