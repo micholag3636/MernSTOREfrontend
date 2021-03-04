@@ -44,16 +44,20 @@ function Nav({click}) {
              <div  id="aboutus">
 
 
+                 <div className="dropdowns_wrapper">
+
+
                  <div className="nav_link">
   
          
     
 
                 <button className="navbutabout" ><h3 className="droph3">About Us</h3></button>
-                <div class="dropdown-about" id="topdrop">
+                <div className="dropdown-about" id="topdrop">
                     <Link to="/company" ><button className="dropdownb">Company</button></Link>
                   <Link to="/team"><button className="dropdownb">Team</button></Link>  
                    <Link to="/founders"> <button className="dropdownb">Founders</button></Link>
+                </div>
                 </div>
                 </div>
                 </div>
@@ -62,6 +66,8 @@ function Nav({click}) {
 
 
                 <div  id="aboutus">
+
+                    <div className="dropdowns_wrapper" >
   
          
                     
@@ -70,10 +76,11 @@ function Nav({click}) {
 <div className="nav_link">
 
   <button className="navbutabout"><h3 className="droph3">Contact Us</h3></button>
-  <div class="dropdown-about " id="topdrop">
+  <div className="dropdown-about" id="topdrop">
      <Link to="/offices"> <button className="dropdownb">Offices</button></Link>
       <Link to="/warehouses"><button className="dropdownb">Warehouses</button></Link>
     <Link to="/support">  <button className="dropdownb">Support</button></Link>
+  </div>
   </div>
   </div>
   </div>
