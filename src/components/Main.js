@@ -58,10 +58,19 @@ function Main() {
 observer = {true}
 observeParents = {true}
 
+pagination={{clickable: true}}
+
+
+
+
+
+
+
  
        
         spaceBetween={10}
         slidesPerView={1}
+        
         
 
         
@@ -75,9 +84,7 @@ observeParents = {true}
 
 
 
-          pagination={{clickable: true}}
- 
-        
+      
           
       
         
@@ -103,22 +110,25 @@ observeParents = {true}
                     key={product._id}
                     productId = {product._id}
                     name={product.name}
-                    price={product.pice}
+                    price={product.price}
                     description={product.description}
                     imageUrl={product.imageUrl}
-                    
+
+                            
                     
                     /> 
                     </div>
                     <div onClick={() =>{
                         setStart(start + 4)
                         setEnd(end + 4)
+
                         
                         
                          console.log("done")
                          
                          } } className="swiper-button-next"> </div>
                     <div onClick={() =>{
+                      
 
                         if (start === 0){
                             console.log("Cant go back")
@@ -138,7 +148,7 @@ observeParents = {true}
 
 
                     } className="swiper-button-prev"> </div>
-                   s
+                   <div className="swiper-pagination"></div>
 
                     </SwiperSlide>)
 

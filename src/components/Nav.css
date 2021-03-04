@@ -215,11 +215,14 @@ h3{
     color: white;
     
     display: block;
+
   
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-decoration: none;
+
+  
     
    
 
@@ -231,6 +234,7 @@ h3{
 
 #aboutus:hover .dropdown-about{
     display: block;
+    transition-delay: 5s;
     display: flex;
    
  
@@ -342,6 +346,7 @@ h3{
     color: white;
     border: none;
     display: block;
+    transition-delay: 5s;
    
    
 }
