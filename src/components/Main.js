@@ -61,17 +61,20 @@ observeParents = {true}
 
 ationClickable = {true}
 
-autoplay={{disableOnInteraction: false, delay: 1500 }}
+autoplay={{disableOnInteraction: false, delay: 1300 }}
 
 
 observer = {true}
 centeredSlides = {true}
+preventClicks = {true}
 
 
 
 
 
 
+
+rebuildOnUpdate ={true}
 
 
 
@@ -84,7 +87,7 @@ centeredSlides = {true}
         spaceBetween={10}
         slidesPerView={1}
         direction = "horizontal"
-           loop = {true}
+          
      
         
 
@@ -110,9 +113,6 @@ centeredSlides = {true}
           onClick={() =>{
             setStart(start + 4)
             setEnd(end + 4)
-
-
-
             
             
              console.log("done")
