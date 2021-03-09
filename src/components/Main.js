@@ -63,29 +63,23 @@ function Main() {
 
     const [num,setNum] = useState(0)
 
+    const [numslide,setNumslide] = useState(1)
+
+    
+    const [auto,setAuto] = useState(true)
+
 
     /*
     useEffect(() => {
-
         
         setStart(prevStart => prevStart + 4)
-
 setEnd(prevEnd => prevEnd + 4)
-
-
-
  setStart(prevStart => prevStart )
  setEnd(prevEnd => prevEnd )
  
 setStart(4)
 setEnd(8)
-
-
-
-
     }, [num])
-
-
     */
    
 
@@ -100,8 +94,12 @@ useEffect(() => {
 
 
     
- setStart( prevStart => prevStart + 4)
+ setStart( prevStart => prevStart +4)
  setEnd(prevEnd => prevEnd + 4)
+ setAuto(false)
+ 
+
+
 
     
 
@@ -134,10 +132,13 @@ observeParents = {true}
 
 
 actionClickable = {true}
+pagination
 
 
 
-autoplay={{disableOnInteraction: false, delay: 1000 }}
+
+
+autoplay = {  {disableOnInteraction: false, delay: 1000 }}
 
 
 
@@ -168,7 +169,7 @@ loopedSlides = {4}
  
        
         spaceBetween={10}
-        slidesPerView={1}
+        slidesPerView={numslide}
         direction = "horizontal"
      
         
@@ -278,35 +279,17 @@ loopedSlides = {4}
                   
 
                     /*
-
                
-
-
-
     
     
  setStart(prevStart => prevStart + 4)
-
 setEnd(prevEnd => prevEnd + 4)
-
-
-
  setStart(prevStart => prevStart )
  setEnd(prevEnd => prevEnd )
-
        
  window.location.reload();
-
  
-
  
-
-
-
-
-
-
-
  console.log(start,end)
  */
 
