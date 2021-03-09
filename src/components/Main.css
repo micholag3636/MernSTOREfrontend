@@ -15,7 +15,8 @@
 
 .swiperc{
     margin-top: 160px;
-    margin-left: 10px;
+  
+    
     width: 100px;
     display: flex;
     flex-direction: row;
@@ -32,11 +33,12 @@
 }
 
 .swiper-button-next{
-    margin-right: 90px;
+   margin-right: 20px;
   
 }
 
 .swiper-button-prev{
+    margin-left: 20px;
 
 
 }
